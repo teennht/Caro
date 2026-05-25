@@ -1,0 +1,9 @@
+BG_MAIN textures/background.png
+BG_VICTORY textures/victory_background.png
+CLOUD textures/cloud.png
+CUP textures/cup.png
+SUN textures/sun.png
+TREE_1 textures/tree_1.png
+TREE_2 textures/tree_2.png
+PANEL_1 textures/diagbox_1.png
+PANEL_2 textures/diagbox_2.png
