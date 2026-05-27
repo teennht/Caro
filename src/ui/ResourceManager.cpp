@@ -149,7 +149,7 @@ const sf::Font& ResourceManager::getFont(const std::string& name) {
     std::string foundPath = "";
     std::vector<std::string> attempted;
 
-    for (const auto& relativePath : {std::string("fonts/Outfit-Medium.ttf"), std::string("Outfit-Medium.ttf")}) {
+    for (const auto& relativePath : {std::string("fonts/dearpix-2-01.otf"), std::string("dearpix-2-01.otf")}) {
         for (const auto& path : candidatePaths(relativePath)) {
             attempted.push_back(path.string());
             if (!font.openFromFile(path.string())) {
@@ -169,10 +169,10 @@ const sf::Font& ResourceManager::getFont(const std::string& name) {
         }
         std::cerr << "\n[Asset] Trying system font fallback..." << std::endl;
         std::vector<std::string> fallbackPaths = {
-            "/System/Library/Fonts/Supplemental/Arial.ttf",
-            "/System/Library/Fonts/Arial.ttf",
-            "/Library/Fonts/Arial.ttf",
-            "C:\\Windows\\Fonts\\arial.ttf"
+            "/System/Library/Fonts/Supplemental/dearpix-2-01.otf",
+            "/System/Library/Fonts/dearpix-2-01.otf",
+            "/Library/Fonts/dearpix-2-01.otf",
+            "C:\\Windows\\Fonts\\dearpix-2-01.otf"
         };
         for (const auto& path : fallbackPaths) {
             if (font.openFromFile(path)) {
